@@ -29,3 +29,5 @@ bin/
 .DS_Store
 
 calculator-java-jar-import.iml
+
+output/*
