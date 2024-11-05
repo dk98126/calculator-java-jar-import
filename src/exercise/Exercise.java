@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class Exercise {
   public static void main(String[] args) {
     Calculator calculator = new Calculator();
     Scanner scanner = new Scanner(System.in);
