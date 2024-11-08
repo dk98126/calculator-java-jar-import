@@ -12,7 +12,7 @@ public class Exercise {
     Scanner scanner = new Scanner(System.in);
     Random random = new Random();
 
-    System.out.println("Добро пожаловать в игру на сложение и вычитание!");
+    System.out.println("Welcome!");
 
     int points = 0;
     while (true) {
@@ -21,11 +21,11 @@ public class Exercise {
       Operation operation = List.of(Operation.PLUS, Operation.MINUS).get(random.nextInt(2));
       int expected = calculator.calculate(a, operation, b);
 
-      System.out.println("Сколько будет " + a + operation + b + "?");
+      System.out.println(a + " " + operation + " " + b + "?");
       int answer = scanner.nextInt();
 
       if (answer != expected) {
-        System.out.println("Вы набрали " + points);
+        System.out.println("Score " + points);
         System.exit(0);
       }
       points++;
