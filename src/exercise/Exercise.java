@@ -14,13 +14,9 @@ public class Exercise {
     Scanner scanner = new Scanner(System.in);
     Random random = new Random();
 
-<<<<<<< HEAD
-    System.out.println("Welcome!");
-=======
     System.out.println(
         FigletFont.convertOneLine("Welcome!")
     );
->>>>>>> 83fb8a7 (figlet font)
 
     int points = 0;
     while (true) {
@@ -28,7 +24,7 @@ public class Exercise {
       int b = random.nextInt(1, 100);
       Operation operation = List.of(Operation.PLUS, Operation.MINUS).get(random.nextInt(2));
       int expected = calculator.calculate(a, operation, b);
-      
+
       System.out.println(
           FigletFont.convertOneLine(a + " " + operation + " " + b + "?")
       );
